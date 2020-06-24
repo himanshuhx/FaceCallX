@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306635196827",
+    "firebase_url": "https://facecallx.firebaseio.com",
+    "project_id": "facecallx",
+    "storage_bucket": "facecallx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306635196827:android:92c403e7106c23ac2bb93e",
+        "android_client_info": {
+          "package_name": "com.first75494.facecallx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306635196827-3p6q79m95co0eumo1juk3h7c9liu289d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.first75494.facecallx",
+            "certificate_hash": "db615401f0f6a401a3b30cb2bec69bd6b290fbc9"
+          }
+        },
+        {
+          "client_id": "306635196827-drrb8rpm8bcs5knnr7iph1v42sng1ni5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA25ybyXqDvzUj_zUTFfNWjnLkDvjqtqc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306635196827-drrb8rpm8bcs5knnr7iph1v42sng1ni5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
