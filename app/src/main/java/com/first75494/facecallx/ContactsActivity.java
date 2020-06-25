@@ -98,6 +98,8 @@ public class ContactsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        validateUser();
+
         FirebaseRecyclerOptions<Contacts> options =
                new FirebaseRecyclerOptions.Builder<Contacts>()
                 .setQuery(contactsRef.child(currentUserId), Contacts.class)
@@ -139,6 +141,7 @@ public class ContactsActivity extends AppCompatActivity {
       firebaseRecyclerAdapter.startListening();
     }
 
+
     public static class ContactsViewHolder extends RecyclerView.ViewHolder {
 
         TextView userNameText;
@@ -153,5 +156,28 @@ public class ContactsActivity extends AppCompatActivity {
             profileImageView = itemView.findViewById(R.id.image_contact);
 
         }
+    }
+
+    private void validateUser() {
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+
+        reference.child("users").child(currentUserId).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    if(dataSnapshot.exists()){
+                        Intent intent = new Intent(ContactsActivity.this,SettingsActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 }
