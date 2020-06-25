@@ -47,6 +47,7 @@
             android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:text="Accept Friend Request"
+            android:visibility="gone"
             android:textStyle="bold"
             android:background="#78DA44">
 
@@ -63,6 +64,7 @@
             android:layout_marginBottom="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:text="Cancel Friend Request"
+            android:visibility="gone"
             android:textStyle="bold"
             android:background="#E81111">
 
