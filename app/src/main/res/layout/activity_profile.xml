@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/background_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/profile_image"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="user name"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="420dp">
+
+    </TextView>
+
+    <Button
+    android:id="@+id/send_friend_request"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/name_profile"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:text="Add Friend"
+    android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/cancel_friend_request"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_friend_request"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Decline Request"
+        android:textStyle="bold"
+        android:visibility="gone">
+
+    </Button>
+
+
+</RelativeLayout>
