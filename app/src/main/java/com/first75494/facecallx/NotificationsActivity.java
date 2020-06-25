@@ -53,7 +53,7 @@ public class NotificationsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerOptions options =
+        FirebaseRecyclerOptions<Contacts> options =
                    new FirebaseRecyclerOptions.Builder<Contacts>()
                 .setQuery(friendRequestRef.child(currentUserId),Contacts.class)
                 .build();
