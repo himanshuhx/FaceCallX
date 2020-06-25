@@ -12,17 +12,41 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class NotificationsActivity extends AppCompatActivity {
 
     private RecyclerView notifications_list;
+    private DatabaseReference friendRequestRef, contactsRef, userRef;
+    private FirebaseAuth firebaseAuth;
+    private String currentUserId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
+        firebaseAuth = FirebaseAuth.getInstance();
+        currentUserId = firebaseAuth.getCurrentUser().getUid();
+        friendRequestRef = FirebaseDatabase.getInstance().getReference().child("Friend Requests");
+        contactsRef = FirebaseDatabase.getInstance().getReference().child("Contacts");
+        userRef = FirebaseDatabase.getInstance().getReference().child("users");
+
         notifications_list = findViewById(R.id.notifications_list);
         notifications_list.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseRecyclerOptions options =
+        options =  new FirebaseRecyclerOptions.Builder<Contacts>()
+                .setQuery(friendRequestRef.child(currentUserId),Contacts.class)
+                .build();
     }
 
     public static class NotificationsViewHolder extends RecyclerView.ViewHolder {
