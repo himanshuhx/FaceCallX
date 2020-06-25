@@ -120,6 +120,15 @@ public class ContactsActivity extends AppCompatActivity {
                             holder.userNameText.setText(userName);
                             Picasso.get().load(profileImage).into(holder.profileImageView);
                         }
+
+                        holder.callBtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(ContactsActivity.this,CallActivity.class);
+                                intent.putExtra("visit_user-id",listUserId);
+                                startActivity(intent);
+                            }
+                        });
                     }
 
                     @Override
