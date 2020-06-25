@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotificationsActivity">
+    tools:context=".FindPeopleActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-
-        android:id="@+id/app_bar_layout_notifications"
+        android:id="@+id/app_bar_layout_find_people"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -23,14 +22,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/search_txt"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Notifications"
+                    android:hint="Search"
+                    android:drawableLeft="@drawable/search"
+                    android:textAlignment="center"
+                    android:layout_marginRight="40dp"
                     android:textColor="#FFFFFF"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true">
+
+                </EditText>
+
 
             </RelativeLayout>
 
@@ -39,12 +43,12 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/notifications_list"
+        android:id="@+id/find_friends_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/app_bar_layout_notifications">
+        android:layout_below="@+id/app_bar_layout_find_people"
+        >
 
     </androidx.recyclerview.widget.RecyclerView>
-
 
 </RelativeLayout>

@@ -120,7 +120,7 @@ public class SignUpActivity extends AppCompatActivity {
     FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
     if(firebaseUser!=null){
-        Intent mainIntent = new Intent(SignUpActivity.this,MainActivity.class);
+        Intent mainIntent = new Intent(SignUpActivity.this,ContactsActivity.class);
         startActivity(mainIntent);
         finish();
     }
@@ -145,7 +145,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void sendUserToMainActivity(){
-        Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
+        Intent intent = new Intent(SignUpActivity.this,ContactsActivity.class);
         startActivity(intent);
         finish();
     }

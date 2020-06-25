@@ -4,13 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity">
+    tools:context=".SettingsActivity"
+    android:background="@color/colorPrimaryDark">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile_image"/>
 
-    </TextView>
+    <EditText
+    android:id="@+id/username_settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/edit_profile"
+    android:drawableTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+    android:layout_below="@+id/profile_image"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:hint="Enter your Username"
+    android:textColorHint="#FFFFFF"
+    android:height="40dp"/>
+
+    <EditText
+    android:id="@+id/bio_settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_mood_black_24dp"
+    android:drawableTint="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:layout_below="@+id/username_settings"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:hint="Your Status"
+    android:textColorHint="#FFFFFF"
+    android:height="40dp"/>
+
+    <Button
+        android:id="@+id/save_settings_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bio_settings"
+        android:layout_marginTop="30dp"
+      android:layout_centerHorizontal="true"
+        android:background="#091349"
+        android:hint="Update"
+        android:textColorHint="#FF0404"
+        android:height="40dp"/>
 
 
 </RelativeLayout>
