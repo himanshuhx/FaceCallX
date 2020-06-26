@@ -98,7 +98,7 @@ public class ContactsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        validateUser();
+       // validateUser();
 
         FirebaseRecyclerOptions<Contacts> options =
                new FirebaseRecyclerOptions.Builder<Contacts>()
@@ -125,7 +125,7 @@ public class ContactsActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 Intent intent = new Intent(ContactsActivity.this,CallActivity.class);
-                                intent.putExtra("visit_user-id",listUserId);
+                                intent.putExtra("visit_user_id",listUserId);
                                 startActivity(intent);
                             }
                         });
