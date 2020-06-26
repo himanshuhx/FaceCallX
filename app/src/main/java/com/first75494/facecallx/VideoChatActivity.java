@@ -49,7 +49,7 @@ public class VideoChatActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_chat);
 
-        userRef = FirebaseDatabase.getInstance().getReference();
+        userRef = FirebaseDatabase.getInstance().getReference().child("users");
         userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         closeVideoChatBtn = findViewById(R.id.close_video_chat_btn);
@@ -69,7 +69,7 @@ public class VideoChatActivity extends AppCompatActivity
                                mSubscriber.destroy();
                            }
 
-                           startActivity(new Intent(VideoChatActivity.this,SignUpActivity.class));
+                           startActivity(new Intent(VideoChatActivity.this,ContactsActivity.class));
                            finish();
                        }
                        if(dataSnapshot.child(userId).hasChild("Calling")){
@@ -82,10 +82,10 @@ public class VideoChatActivity extends AppCompatActivity
                                mSubscriber.destroy();
                            }
 
-                           startActivity(new Intent(VideoChatActivity.this,SignUpActivity.class));
+                           startActivity(new Intent(VideoChatActivity.this,ContactsActivity.class));
                            finish();
                        }else{
-                           startActivity(new Intent(VideoChatActivity.this,SignUpActivity.class));
+                           startActivity(new Intent(VideoChatActivity.this,ContactsActivity.class));
                            finish();
                        }
                    }

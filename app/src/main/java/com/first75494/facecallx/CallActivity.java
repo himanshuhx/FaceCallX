@@ -199,7 +199,7 @@ public class CallActivity extends AppCompatActivity {
                                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
-                                                                startActivity(new Intent(CallActivity.this,SignUpActivity.class));
+                                                                startActivity(new Intent(CallActivity.this,ContactsActivity.class));
                                                                 finish();
                                                             }
                                                         });
@@ -207,7 +207,7 @@ public class CallActivity extends AppCompatActivity {
                                         }
                                     });
                         }else{
-                            startActivity(new Intent(CallActivity.this,SignUpActivity.class));
+                            startActivity(new Intent(CallActivity.this,ContactsActivity.class));
                             finish();
                         }
                     }
@@ -240,7 +240,7 @@ public class CallActivity extends AppCompatActivity {
                                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
-                                                                startActivity(new Intent(CallActivity.this,SignUpActivity.class));
+                                                                startActivity(new Intent(CallActivity.this,ContactsActivity.class));
                                                                 finish();
                                                             }
                                                         });
@@ -248,7 +248,7 @@ public class CallActivity extends AppCompatActivity {
                                         }
                                     });
                         }else{
-                            startActivity(new Intent(CallActivity.this,SignUpActivity.class));
+                            startActivity(new Intent(CallActivity.this,ContactsActivity.class));
                             finish();
                         }
                     }
