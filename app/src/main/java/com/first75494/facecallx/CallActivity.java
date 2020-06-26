@@ -154,6 +154,7 @@ public class CallActivity extends AppCompatActivity {
            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
               if(dataSnapshot.child(senderUserId).hasChild("Ringing")
                     && !dataSnapshot.child(senderUserId).hasChild("Calling")){
+                  //here
 
                   acceptCallBtn.setVisibility(View.VISIBLE);
               }
