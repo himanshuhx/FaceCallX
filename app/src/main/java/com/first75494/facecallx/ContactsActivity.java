@@ -35,7 +35,7 @@ public class ContactsActivity extends AppCompatActivity {
     private DatabaseReference  contactsRef,userRef;
     private FirebaseAuth firebaseAuth;
     private String currentUserId;
-    private String userName = "", profileImage = "";
+    private String userName = "", profileImage = "",calledBy = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +98,8 @@ public class ContactsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+         checkForCall();
+
        // validateUser();
 
         FirebaseRecyclerOptions<Contacts> options =
@@ -150,7 +152,6 @@ public class ContactsActivity extends AppCompatActivity {
       firebaseRecyclerAdapter.startListening();
     }
 
-
     public static class ContactsViewHolder extends RecyclerView.ViewHolder {
 
         TextView userNameText;
@@ -176,9 +177,9 @@ public class ContactsActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
                     if(dataSnapshot.exists()){
-                        Intent intent = new Intent(ContactsActivity.this,SettingsActivity.class);
+                        Intent intent = new Intent(ContactsActivity.this,CallActivity.class);
+                        intent.putExtra("visit_user_id",calledBy);
                         startActivity(intent);
-                        finish();
                     }
                 }
             }
@@ -188,5 +189,32 @@ public class ContactsActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    private void checkForCall() {
+
+        userRef.child(currentUserId)
+                .child("Ringing")
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                        if(dataSnapshot.hasChild("ringing")){
+
+                            calledBy = dataSnapshot.child("ringing").getValue().toString();
+
+                            Intent intent = new Intent(ContactsActivity.this,CallActivity.class);
+
+                            startActivity(intent);
+                            finish();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
     }
 }
