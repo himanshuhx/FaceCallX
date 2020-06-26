@@ -4,22 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity"
+    android:padding="30dp">
 
     <RelativeLayout
         android:id="@+id/phoneAuth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/videochat" />
+
         <TextView
             android:id="@+id/EnterPhoneNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="0dp"
+            android:layout_marginTop="230dp"
             android:gravity="center"
-            android:text="Enter Your Phone no"
+            android:text="Enter your Mobile no"
+            android:textColor="#FF5722"
+            android:fontFamily="@font/redokaneegular"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -27,18 +40,16 @@
         android:id="@+id/ccp"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-            android:layout_marginTop="10dp"
         android:layout_below="@+id/EnterPhoneNo"
-        android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
         app:ccpDialog_backgroundColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/phonetext"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginRight="30dp"
         android:hint="Type Here..."
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:inputType="phone"
         android:layout_below="@+id/EnterPhoneNo"
         android:layout_centerInParent="true"

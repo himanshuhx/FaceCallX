@@ -31,9 +31,9 @@ import pub.devrel.easypermissions.EasyPermissions;
 public class VideoChatActivity extends AppCompatActivity
         implements Session.SessionListener, PublisherKit.PublisherListener {
 
-    private static String API_Key = "";
-    private static String SESSION_ID = "";
-    private static String TOKEN = "";
+    private static String API_Key = "46813454";
+    private static String SESSION_ID = "2_MX40NjgxMzQ1NH5-MTU5MzE2NzMyNzQ0Mn5NYjlZaXVTUVNrSk9QRGk4Ry8xdHpXWUJ-fg";
+    private static String TOKEN = "T1==cGFydG5lcl9pZD00NjgxMzQ1NCZzaWc9MzUyYTM5OWIzYTllNzdhNzE4YzlmMzhhMjRkNjAzMWFlMmRiYjNjMjpzZXNzaW9uX2lkPTJfTVg0ME5qZ3hNelExTkg1LU1UVTVNekUyTnpNeU56UTBNbjVOWWpsWmFYVlRVVk5yU2s5UVJHazRSeTh4ZEhwWFdVSi1mZyZjcmVhdGVfdGltZT0xNTkzMTY3NDIxJm5vbmNlPTAuNzgxNzc5NzY2OTA1MTc0OSZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTk1NzU5NDE3JmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
     private static final String LOG_TAG = VideoChatActivity.class.getSimpleName();
     private static final int RC_VIDEO_APP_PERM = 124;
     private DatabaseReference userRef;
@@ -49,7 +49,7 @@ public class VideoChatActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_chat);
 
-        userRef = FirebaseDatabase.getInstance().getReference();
+        userRef = FirebaseDatabase.getInstance().getReference().child("users");
         userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         closeVideoChatBtn = findViewById(R.id.close_video_chat_btn);
@@ -69,7 +69,7 @@ public class VideoChatActivity extends AppCompatActivity
                                mSubscriber.destroy();
                            }
 
-                           startActivity(new Intent(VideoChatActivity.this,SignUpActivity.class));
+                           startActivity(new Intent(VideoChatActivity.this,ContactsActivity.class));
                            finish();
                        }
                        if(dataSnapshot.child(userId).hasChild("Calling")){
@@ -82,10 +82,10 @@ public class VideoChatActivity extends AppCompatActivity
                                mSubscriber.destroy();
                            }
 
-                           startActivity(new Intent(VideoChatActivity.this,SignUpActivity.class));
+                           startActivity(new Intent(VideoChatActivity.this,ContactsActivity.class));
                            finish();
                        }else{
-                           startActivity(new Intent(VideoChatActivity.this,SignUpActivity.class));
+                           startActivity(new Intent(VideoChatActivity.this,ContactsActivity.class));
                            finish();
                        }
                    }
@@ -97,6 +97,8 @@ public class VideoChatActivity extends AppCompatActivity
                });
             }
         });
+
+        requestPermissions();
     }
 
     @Override

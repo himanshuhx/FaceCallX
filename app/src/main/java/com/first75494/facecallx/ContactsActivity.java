@@ -205,9 +205,8 @@ public class ContactsActivity extends AppCompatActivity {
                             calledBy = dataSnapshot.child("ringing").getValue().toString();
 
                             Intent intent = new Intent(ContactsActivity.this,CallActivity.class);
-
+                            intent.putExtra("visit_user_id",calledBy);
                             startActivity(intent);
-                            finish();
                         }
                     }
 
