@@ -27,6 +27,7 @@ A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime
 ![pic8](https://user-images.githubusercontent.com/65825310/85925530-9ca77400-b8b6-11ea-96c3-9d5227406722.png)
 ![pic6](https://user-images.githubusercontent.com/65825310/85925513-797cc480-b8b6-11ea-9660-1b2dfb5da7d7.png)
 ![pic7](https://user-images.githubusercontent.com/65825310/85925523-86011d00-b8b6-11ea-9a80-c442bc55adfb.png)
+![pic5](https://user-images.githubusercontent.com/65825310/85925490-64079a80-b8b6-11ea-93a7-4920fd820b13.png)
 
 ## Extra Gradle Dependencies
 ```Java
