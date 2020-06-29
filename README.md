@@ -3,6 +3,7 @@
 A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime Database Support and [TokBox](https://tokbox.com/developer/) API.
 
 
+[![made-with-java](https://img.shields.io/badge/Made%20with-Java-1f425f.svg)](https://www.oracle.com/java/technologies/) [![Code-quality-score](https://www.code-inspector.com/project/10441/score/svg)](https://frontend.code-inspector.com/public/project/10441/FaceCallX/dashboard) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/himanshuhx/FaceCallX/graphs/commit-activity)  [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Features of Application
 
