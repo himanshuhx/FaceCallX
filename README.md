@@ -2,8 +2,7 @@
 
 A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime Database Support and [TokBox](https://tokbox.com/developer/) API.
 
-[![made-with-java](https://img.shields.io/badge/Made%20with-Java-1f425f.svg)](https://www.oracle.com/java/technologies/)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 
 ## Features of Application
 
@@ -17,8 +16,8 @@ A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime
 - User has the choice to Accept or Decline Friend Request received with `Accept Friend Request` and `Cancel Friend Request` Button in Notifications Activity.
 - Request Sender is added automatically to the Contacts Activity of Current User if a user Accepts the friend request.
 
-## Screenshots
 
+## Screenshots  :camera:
 ![pic9](https://user-images.githubusercontent.com/65825310/85925308-27876f00-b8b5-11ea-900e-c50149453397.png)
 ![pic1](https://user-images.githubusercontent.com/65825310/85925357-8947d900-b8b5-11ea-80de-69e8519dc40a.png)
 ![pic2](https://user-images.githubusercontent.com/65825310/85925438-1a1eb480-b8b6-11ea-9468-34b88c6ce33b.png)
@@ -28,6 +27,12 @@ A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime
 ![pic6](https://user-images.githubusercontent.com/65825310/85925513-797cc480-b8b6-11ea-9660-1b2dfb5da7d7.png)
 ![pic7](https://user-images.githubusercontent.com/65825310/85925523-86011d00-b8b6-11ea-9a80-c442bc55adfb.png)
 ![pic5](https://user-images.githubusercontent.com/65825310/85925490-64079a80-b8b6-11ea-93a7-4920fd820b13.png)
+
+
+## Firebase ScreenCasts 
+<img src="https://user-images.githubusercontent.com/65825310/86031851-132da880-ba54-11ea-95ff-4119146429ac.gif" width="800" height="400">
+<img src="https://user-images.githubusercontent.com/65825310/86034244-d8c60a80-ba57-11ea-959b-741c1f0c08d5.gif" width="800" height="400">
+
 
 ## Extra Gradle Dependencies
 ```Java
