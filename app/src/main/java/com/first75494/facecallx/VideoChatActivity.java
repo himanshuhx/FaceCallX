@@ -2,19 +2,16 @@ package com.first75494.facecallx;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.Manifest;
 import android.content.Intent;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
-
 import com.opentok.android.OpentokError;
 import com.opentok.android.PublisherKit;
 import com.opentok.android.Session;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,7 +21,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.opentok.android.Publisher;
 import com.opentok.android.Stream;
 import com.opentok.android.Subscriber;
-
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
