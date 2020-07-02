@@ -19,16 +19,9 @@ A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime
 
 
 ## Screenshots  :camera:
-![pic9](https://user-images.githubusercontent.com/65825310/85925308-27876f00-b8b5-11ea-900e-c50149453397.png)
-![pic1](https://user-images.githubusercontent.com/65825310/85925357-8947d900-b8b5-11ea-80de-69e8519dc40a.png)
-![pic2](https://user-images.githubusercontent.com/65825310/85925438-1a1eb480-b8b6-11ea-9468-34b88c6ce33b.png)
-![pic3](https://user-images.githubusercontent.com/65825310/85925464-36225600-b8b6-11ea-9ba2-592423d8b14b.png)
-![pic4](https://user-images.githubusercontent.com/65825310/85925481-50f4ca80-b8b6-11ea-9db3-0f1f00d92981.png)
-![pic8](https://user-images.githubusercontent.com/65825310/85925530-9ca77400-b8b6-11ea-96c3-9d5227406722.png)
-![pic6](https://user-images.githubusercontent.com/65825310/85925513-797cc480-b8b6-11ea-9660-1b2dfb5da7d7.png)
-![pic7](https://user-images.githubusercontent.com/65825310/85925523-86011d00-b8b6-11ea-9a80-c442bc55adfb.png)
-![pic5](https://user-images.githubusercontent.com/65825310/85925490-64079a80-b8b6-11ea-93a7-4920fd820b13.png)
-
+<img src="https://user-images.githubusercontent.com/65825310/85925308-27876f00-b8b5-11ea-900e-c50149453397.png" width="250" height="450"> <img src="https://user-images.githubusercontent.com/65825310/85925357-8947d900-b8b5-11ea-80de-69e8519dc40a.png" width="250" height="450"> <img src="https://user-images.githubusercontent.com/65825310/85925438-1a1eb480-b8b6-11ea-9468-34b88c6ce33b.png" width="250" height="450">
+<img src="https://user-images.githubusercontent.com/65825310/85925464-36225600-b8b6-11ea-9ba2-592423d8b14b.png" width="250" height="450"> <img src="https://user-images.githubusercontent.com/65825310/85925481-50f4ca80-b8b6-11ea-9db3-0f1f00d92981.png" width="250" height="450"> <img src="https://user-images.githubusercontent.com/65825310/85925513-797cc480-b8b6-11ea-9660-1b2dfb5da7d7.png" width="250" height="450"> 
+<img src="https://user-images.githubusercontent.com/65825310/85925523-86011d00-b8b6-11ea-9a80-c442bc55adfb.png" width="250" height="450"> <img src="https://user-images.githubusercontent.com/65825310/85925530-9ca77400-b8b6-11ea-96c3-9d5227406722.png" width="250" height="450"> <img src="https://user-images.githubusercontent.com/65825310/85925490-64079a80-b8b6-11ea-93a7-4920fd820b13.png" width="250" height="450">
 
 ## Firebase ScreenCasts 
 <img src="https://user-images.githubusercontent.com/65825310/86031851-132da880-ba54-11ea-95ff-4119146429ac.gif" width="800" height="400">
