@@ -39,7 +39,6 @@ A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime
     implementation 'pub.devrel:easypermissions:0.4.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.opentok.android:opentok-android-sdk:2.15.3'
-    implementation 'pub.devrel:easypermissions:0.4.0'
     implementation 'com.airbnb.android:lottie:3.4.0'
 ```
 
