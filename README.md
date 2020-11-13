@@ -11,7 +11,7 @@ A Video Caliing Application built in Android Studio 3.6.3 with Firebase RealTime
 - Users can create account through their phone number so it comes with [Country Code Picker](https://github.com/hbb20/CountryCodePickerProject).
     `(CCP) is an android library which provides an easy way to search and select country or international phone code.`
 - User can `set` and `update` their Profile Image, Username, Status in Settings Activity of the Application.
-- App has `Find Friends Activity` where users can look around for different people using the application or thay can `search` a specific user also, through their username through Search Bar.
+- App has `Find Friends Activity` where users can look around for numerous people using the application or thay can `search` a specific user also, through their username through Search Bar.
 - User can view different users profile and can send them `Friend Request` through `Add Friend` Button in user's profile activity.
 - User gets `Real-time notification` with Firebase for every friend request received through the Notification Activity of application.
 - User has the choice to Accept or Decline Friend Request received with `Accept Friend Request` and `Cancel Friend Request` Button in Notifications Activity.
